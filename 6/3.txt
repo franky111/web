@@ -1,0 +1,17 @@
+INSERT INTO dvd (title, production_year) VALUES
+('film-1', 2008), ('film-2', 2009), ('film3', 2009),
+('film-4', 2010), ('film-5', 2010), ('film-6', 2010),
+('film-7', 2011), ('film-8', 2011), ('film-9', 2011),
+('film-10', 2012), ('film-11', 2012), ('film-12', 2012);
+INSERT INTO customer (`first_name`, `last_name`, `passport_code`, `registration_date`) VALUES
+('boris', 'borisov', '111111111', '2000-01-01'),
+('petr', 'petrov', '222222222', '2000-01-02'),
+('nikolai', 'nikolaev', '333333333', '2000-01-03'),
+('ivan', 'ivanov', '444444444', '2000-01-04'),
+('sergei', 'sergeev', '55555555', '2000-01-05');
+INSERT INTO offer (`dvd_id`, `customer_id`, `offer_date`, `return_date`) VALUES
+(1, 1, '2012-12-01', 'NULL'),
+(2, 2, '2012-12-02', 'NULL'),
+(3, 3, '2012-12-03', '2012-12-10'),
+(4, 4, '2012-12-04', '2012-12-11'),
+(5, 5, '2012-12-05', 'NULL');
